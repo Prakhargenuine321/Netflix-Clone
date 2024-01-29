@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -6,4 +7,347 @@
 body{
     width: 100%;
     height: 100%;
+    background-color: #292828;
+}
+
+.main{
+    background-image: url(./resources/bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center center;
+    /* we will create zoom-in effect jissae left space khali na rahe */
+    background-size: max(1900px , 100vw);
+    height: 94vh;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+}
+
+.main .box{
+    width: 100%;
+    height: 94vh;
+    background-color: black;
+    opacity: 0.56;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 85vw;
+    height: 92px;
+    margin: 0 auto;
+    /* background-color: #fff; */
+}
+nav img{
+    /* top: -22px; */
+    position: relative;
+    z-index: 10;
+    color: rgb(255, 0, 0);
+    margin-left: 2.65rem;
+}
+
+.btn-main{
+    display: flex;
+    font-family: sans-serif;
+}
+
+.sign-in{
+    position: relative;
+    z-index: 10;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    background-color: #e50914;
+    color: white;
+    text-decoration: none;
+    margin-right: 4rem;
+}
+
+.lng{
+    position: relative;
+    z-index: 10;
+    border:0.5px solid rgb(148, 140, 140);
+    padding: 0.5rem 2.3rem;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 1.2rem;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.hero-desc{
+    width: 100%;
+    height: 70%;
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: rgb(170, 48, 48); */
+    gap: 23px;
+    text-align: center;
+    margin-top: 4rem;
+    font-family:sans-serif;
+}
+
+.hero-desc :nth-child(1){
+    font-size:47px;
+    font-weight:bolder;
+
+}
+.hero-desc :nth-child(2){
+    /* font-family: sans-serif; */
+    font-size:24px;
+    font-weight:400;
+}
+.hero-desc :nth-child(3){
+    /* font-family: sans-serif; */
+    font-size:20px;
+    font-weight: 400;
+}
+
+
+.email-entry{
+    height: 8rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    width: 100%;
+    color: black;
+    column-gap: 0.5rem;
+    margin-top: -29px;
+}
+
+.email-enter{
+    height: 3.4rem;
+    width: 363.64px;
+    background-color: rgb(28, 27, 27);
+    opacity: 0.5;
+    border: 1px solid rgb(218, 214, 214);
+    border-radius: 4px;
+    padding-bottom: 1.3rem;
+    padding-left: 1rem;
+}
+
+.get-start-btn{
+    width:227.28px;
+    background: #e50914;
+    height: 3.4rem;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding-top: 14.4px;
+    text-decoration: none;
+}
+
+.email-enter::placeholder{
+    font-family:sans-serif;
+    font-size: 15px;
+    color: white;
+    font-weight: 100;
+}
+
+.feature{
+    margin-top: 8px;
+    height: 78vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+
+.inside-feature{
+    color: white;
+    max-width: calc( 100% - 4rem );
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.left-feature{
+    /* background-color: rgb(171, 98, 98); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+    row-gap: 1rem;
+}
+
+.left-feature > .head-feature{
+    font-family: sans-serif;
+    font-size: 2.75rem;
+    font-weight:900 ;
+    text-align: left;
+}
+
+.left-feature > .para{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: left;
+    /* background-color: green; */
+}
+
+.right-feature {
+    position: relative;
+}
+
+.right-feature img {
+    width: 550px;
+    position: relative;
+    z-index: 10;
+}
+
+.right-feature video {
+    position: absolute;
+    top: 84px;
+    right: 28px;
+    width: 450px;
+}
+
+@media screen and (max-height:1300px){
+    .feature{
+        height: 60vh;
+    }
+}
+
+@media screen and (max-height:1000px){
+    .feature{
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width:920px) {
+    .main{
+        height: 100vh;
+    }
+    .main .box{
+        height: 100vh;
+    }
+    /* .feature{
+        height: 100vh;
+    } */
+    .left-feature > .head-feature{
+        font-family: sans-serif;
+        font-size: 2.3rem;
+        font-weight:900 ;
+        text-align: center;
+    }
+    .left-feature{
+        width: 100%;
+    }
+    .left-feature > .para{
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        text-align:center;
+        /* background-color: green; */
+    }
+    .inside-feature{
+        flex-direction:column;
+    }
+}
+
+@media screen and (max-width:639px) {
+    .email-entry{
+        flex-direction: column;
+        row-gap: 1.2rem;
+        margin-top:2rem ;
+    }
+}
+
+@media screen and (max-width:1154px) {
+    .sign-in{
+        margin-right: 0rem;
+    }
+    nav img{
+        left: -31%;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .right-feature img {
+        /* width: 500px; */
+        width: 80vw;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .right-feature video {
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        /* width: 400px; */
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width:560px) {
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .btn-main{
+        position: relative;
+        left: -2%;
+    }
+}
+
+@media screen and (max-width:379px) {
+    .email-enter{
+        width: 75vw;
+    }
+    .get-start-btn{
+        width: 50vw;
+    }
+}
+
+@media screen and (max-height:767px) {
+    .hero-desc :nth-child(1) {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-height:700px) {
+    .hero-desc :nth-child(1) {
+        font-size: 23px;
+    }
+    .hero-desc :nth-child(2) {
+        font-size: 16px;
+    }
+    .hero-desc :nth-child(3) {
+        font-size: 18px;
+    }
+    .left-feature > .head-feature {
+        font-size: 1.7rem;
+    }
+    .left-feature > .para {
+        font-size: 1.14rem;
+    }
+}
+
+@media screen and (max-height:370px) {
+    .feature{
+        height: 156vh;
+    }
+    .hero-desc{
+        margin-top: 2rem;
+    }
 }
