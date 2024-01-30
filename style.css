@@ -42,6 +42,8 @@ nav{
     max-width: 85vw;
     height: 92px;
     margin: 0 auto;
+    position: relative;
+    bottom: 1rem;
     /* background-color: #fff; */
 }
 nav img{
@@ -125,7 +127,6 @@ nav img{
     align-items: center;
     /* background-color: #fff; */
     width: 100%;
-    color: black;
     column-gap: 0.5rem;
     margin-top: -29px;
 }
@@ -139,6 +140,7 @@ nav img{
     border-radius: 4px;
     padding-bottom: 1.3rem;
     padding-left: 1rem;
+    color: white;
 }
 
 .get-start-btn{
@@ -175,7 +177,7 @@ nav img{
     justify-content:space-evenly;
     align-items: center;
     margin: 0 auto;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .left-feature{
@@ -183,7 +185,7 @@ nav img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     height: 100%;
     width: 50%;
     row-gap: 1rem;
@@ -191,7 +193,7 @@ nav img{
 
 .left-feature > .head-feature{
     font-family: sans-serif;
-    font-size: 2.75rem;
+    font-size: 2.5rem;
     font-weight:900 ;
     text-align: left;
 }
@@ -221,18 +223,240 @@ nav img{
     width: 450px;
 }
 
-@media screen and (max-height:1300px){
-    .feature{
-        height: 60vh;
-    }
+.feature-two{
+    margin-top: 8px;
+    height: 78vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-height:1000px){
-    .feature{
-        height: 100vh;
-    }
+.left-feature-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    position: relative;
 }
 
+.anime-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    column-gap: 36px;
+    bottom: 2rem;
+    z-index: 12;
+    position: absolute;
+    background-color: black;
+    /* height: 6rem; */
+    border: 2px solid #5e5e5e;
+    border-radius: 10px;
+    padding: 0.57rem;
+    overflow-x: hidden;
+}
+
+.heading-two{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15.5px;
+    font-weight: 600;
+}
+
+.heading-two :nth-child(2){
+    color: #0071eb;
+}
+
+.giffy{
+    background: url(./resources/download-icon.gif);
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.right-feature-two{
+    width: 40%;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.head-feature-two{
+    font-family: sans-serif;
+    font-size: 2.5rem;
+    font-weight:900 ;
+    text-align: left;
+}
+/* -------------- */
+.para-two{
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    width: 100%;
+    text-align: left;
+}
+
+.right-feature-three{
+    position: relative;
+}
+
+
+.right-feature-three img {
+    width: 550px;
+    position: relative;
+    z-index: 10;
+}
+
+.right-feature-three video {
+    position: absolute;
+    top: 31px;
+    right: 104px;
+    width: 344px;
+}
+
+.inside-feature-three{
+    column-gap: 1rem;
+}
+
+.question-wrapper{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.questionnaire{
+    height: 100%;
+    margin-top: 8px;
+    background-color:black;
+    color: white;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    font-family: sans-serif;
+    row-gap: 1.4rem;
+    padding: 1rem 0;
+}
+
+.faq-grid{
+    height: 80%;
+    width: 96%;
+    display: grid;
+    grid-template-rows:repeat(6,1fr) ;
+    row-gap: 0.6rem;
+    justify-items: center;
+}
+
+.cont-faq{
+    background-color:  #2d2d2d;
+    width: 80%;
+    text-align:left;
+    padding:0.5rem 2rem;
+    font-size: 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color;
+    transition-delay: 0.4s;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.cont-faq:hover{
+    background-color: #414141;
+}
+
+.heading-faq{
+    margin-top: 3.7rem;
+    font-size: 2.65rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.faq-notice{
+    position: relative;
+    padding-top: 1rem ;
+    font-size: 20px;
+    text-align: center;
+}
+
+.mem-email-box{
+    padding: 2rem 0;
+}
+
+.membership-email{
+    text-align: left;
+    padding: 1rem;
+    background-color: transparent;
+    /* color: white;
+    opacity: 1; */
+}
+
+.membership-btn{
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px
+}
+
+.footer{
+    margin-top: 8px;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.footer-wrap{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.footer-container{
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    flex-direction:column;
+    justify-items:center;
+    row-gap: 2rem;
+    font-family: sans-serif;
+    color: rgb(188 188 188);
+    font-size: 0.9rem;
+    position: relative;
+    width: 100%;
+    /* ---- */
+    padding-left: 11rem;
+}
+
+.footer-item2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,250px));
+    row-gap: 1rem;
+    column-gap: 2rem;
+}
+
+.quick-links{
+    color: rgb(188 188 188);
+}
+
+.footer-container > .lng{
+    width: 120px;
+}
 
 @media screen and (max-width:920px) {
     .main{
@@ -241,19 +465,19 @@ nav img{
     .main .box{
         height: 100vh;
     }
-    /* .feature{
+    .feature , .feature-two{
         height: 100vh;
-    } */
-    .left-feature > .head-feature{
+    }
+    .left-feature > .head-feature , .head-feature-two{
         font-family: sans-serif;
         font-size: 2.3rem;
         font-weight:900 ;
         text-align: center;
     }
-    .left-feature{
+    .left-feature , .right-feature-two{
         width: 100%;
     }
-    .left-feature > .para{
+    .left-feature > .para , .para-two{
         font-family: sans-serif;
         font-size: 1.6rem;
         text-align:center;
@@ -262,6 +486,23 @@ nav img{
     .inside-feature{
         flex-direction:column;
     }
+
+    .feature-two{
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width:762px){
+    .footer-container{
+        padding-left: 6rem;
+    }
+    .footer-item2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px,220px));
+        row-gap: 1rem;
+        column-gap: 2rem;
+    }
+
 }
 
 @media screen and (max-width:639px) {
@@ -281,20 +522,33 @@ nav img{
     }
 }
 
-@media screen and (max-width:550px) {
-    .right-feature img {
+@media screen and (max-width:597px) {
+    .right-feature img , .left-feature-two > img {
         /* width: 500px; */
         width: 80vw;
         position: relative;
         z-index: 10;
     }
+
+    /* .anime-container{
+        overflow-x: hidden;
+        width: 60%;
+        min-width: 15rem;
+    } */
     
-    .right-feature video {
+    .right-feature video  , .video-3 {
         position: absolute;
         top: 50px;
         right: 30px;
         /* width: 400px; */
         width: 60vw;
+    }
+
+    .footer-item2{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40px,150px));
+        row-gap: 1rem;
+        column-gap: 2rem;
     }
 }
 
@@ -317,6 +571,15 @@ nav img{
     .get-start-btn{
         width: 50vw;
     }
+    .footer-container {
+        padding-left: 3rem;
+    }
+}
+
+@media screen and (max-width:273px){
+    *{
+        font-size: 10px;
+    }
 }
 
 @media screen and (max-height:767px) {
@@ -335,19 +598,39 @@ nav img{
     .hero-desc :nth-child(3) {
         font-size: 18px;
     }
-    .left-feature > .head-feature {
+    .left-feature > .head-feature  , .right-feature-two > .head-feature-two{
         font-size: 1.7rem;
     }
-    .left-feature > .para {
+    .left-feature > .para , .right-feature-two > .para-two{
         font-size: 1.14rem;
     }
 }
 
-@media screen and (max-height:370px) {
-    .feature{
+@media screen and (max-height:385px) {
+    .feature , .feature-two{
         height: 156vh;
     }
     .hero-desc{
         margin-top: 2rem;
     }
+    .membership-btn{
+        font-size: 14px;
+    }
+    .h2{
+        font-size: 20px;
+    }
+    body{
+        background-color: black;
+    }
+}
+
+@media screen and (max-height:500px){
+   .get-start-btn{
+    height: 3rem;
+    margin-top: -10px;
+   }
+   .email-entry{
+       margin-top:-20px ;
+   }
+
 }
